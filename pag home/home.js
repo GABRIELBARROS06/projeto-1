@@ -1,5 +1,7 @@
 'use strict'
 
+const btnExcluir = document.getElementById('excluirTarefas')
+
 async function criarCards(){
     const response = await fetch('http://localhost:5080/tarefas')
     const tarefas =  await response.json()
@@ -43,6 +45,22 @@ async function editarCard(){
 
 }
 
+async function excluirCard() {
+
+    const id=prompt('Digite o ID da tarefa que você deseja deletar')
+    const url=`http://localhost:5080/tarefas/${id}`
+
+    const options={
+        method:'DELETE'
+    }
+
+    await fetch(url, options)
+
+    window.location.reload()
+
+
+}
+
 // async function excluirCard(){
 //     const 
 //     const url = `http://localhost:5080/tarefas${id}`
@@ -52,4 +70,8 @@ async function editarCard(){
 //     const response = await fetch(url, options)
 // }
 
+
+
 criarCards()
+
+btnDelete.addEventListener('click', deletarTarefas)

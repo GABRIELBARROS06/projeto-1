@@ -59,14 +59,20 @@
       "descrição": "Conhecer mais pessoas",
       "dataConclusão": "20/05/2024",
       "idUsuario": 3
+    },
+    {
+      "descrição": "titulo",
+      "dataConclusão": null,
+      "idUsuario": null,
+      "id": 6
     }
   ],
-    "comentarios": [
-        {
-            "id": 1,
-            "comentario": "Tarefa muito boa, parabéns",
-            "idTarefa": 2,
-            "idUsuario": 3
-        }
-    ]
+  "comentarios": [
+    {
+      "id": 1,
+      "comentario": "Tarefa muito boa, parabéns",
+      "idTarefa": 2,
+      "idUsuario": 3
+    }
+  ]
 }
